@@ -13,10 +13,10 @@ install.packages("vader")
 N.B. "Yesn't" is an internet neologism meaning "no", "maybe yes, maybe no", "didn't", etc.
 
 library(vader)
-getVader("I yesn't like it")
+get_vader("I yesn't like it")
 
 ###doesn't include non-dictionary contractions when calculating negations
-getVader("I yesn't like it", incl_nt = F) 
+get_vader("I yesn't like it", incl_nt = F) 
 
 ###doesn't include neutral words in calculations
-getVader("I yesn't like it", neu_set = F) 
+get_vader("I yesn't like it", neu_set = F) 
